@@ -93,6 +93,9 @@ if(get_option(WPAM_PluginConfig::$EnableRegFormAnchor) == 1){
                         ?>    
                             <label for="chkAgreeTerms" id="agreeTermsLabel" class="pure-checkbox"><input type="checkbox" id="chkAgreeTerms" name="chkAgreeTerms" <?php echo (isset($request['chkAgreeTerms']) ? 'checked="checked"':'')?> required />&nbsp;<?php _e('I have read and agree to the', 'affiliates-manager' ) ?> <a target="_blank" href="<?php echo esc_url(get_option(WPAM_PluginConfig::$AffTncPageURL));?>"><?php _e('Terms and Conditions', 'affiliates-manager' ) ?></a></label>
                             <div id="termsAgreeWarning" style="color: red; display: none"><?php _e( 'You must agree to the terms.', 'affiliates-manager' ) ?></div>
+                            <!-- Curstom -->
+                            <label for="chkPrivacyTerms" id="privacyTermsLabel" class="pure-checkbox"><input type="checkbox" id="chkPrivacyTerms" name="chkPrivacyTerms" <?php echo (isset($request['chkPrivacyTerms']) ? 'checked="checked"':'')?> required />&nbspHo letto e compreso l'informativa sul <a href="https://www.matteosalvo.com/pdf/privacy-policy-mindperformance-2022.pdf" target="_blank">trattamento dei dati personali</a></label>
+                            <div id="termsPrivacyWarning" style="color: red; display: none"><?php _e( 'You must agree to the Privacy Policy terms.', 'affiliates-manager' ) ?></div>
 			<?php
                         }else{
                             ?>
